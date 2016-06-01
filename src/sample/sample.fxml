@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane onKeyPressed="#handleKeys" stylesheets="/sample/main.css"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controller">
+
+    <left>
+        <VBox prefHeight="300.0" prefWidth="50.0">
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </BorderPane.margin>
+            <Button onAction="#handleBtns" prefHeight="135.0" prefWidth="50" text="+">
+                <VBox.margin>
+                    <Insets bottom="20.0"/>
+                </VBox.margin>
+            </Button>
+            <Button onAction="#handleBtns" prefHeight="135.0" prefWidth="50" text="-"/>
+        </VBox>
+    </left>
+    <right>
+        <VBox prefHeight="300.0" prefWidth="50.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </BorderPane.margin>
+            <Button mnemonicParsing="false" onAction="#handleBtns" prefHeight="135.0" prefWidth="52.0" text="/">
+                <VBox.margin>
+                    <Insets bottom="20.0"/>
+                </VBox.margin>
+            </Button>
+            <Button onAction="#handleBtns" prefHeight="135.0" prefWidth="52.0" text="*"/>
+        </VBox>
+    </right>
+    <top>
+        <HBox prefHeight="50.0" prefWidth="580.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </BorderPane.margin>
+
+            <Button onAction="#handleBtns" prefHeight="40.0" prefWidth="90.0" text="=">
+                <HBox.margin>
+                    <Insets right="20.0"/>
+                </HBox.margin>
+            </Button>
+            <Button onAction="#handleBtns" prefHeight="40.0" prefWidth="90.0" text="0">
+                <HBox.margin>
+                    <Insets right="20.0"/>
+                </HBox.margin>
+            </Button>
+            <Button onAction="#handleBtns" prefHeight="40.0" prefWidth="90.0" text="."/>
+            <Button onAction="#handleBtns" prefHeight="30" prefWidth="30" text="C">
+                <HBox.margin>
+                    <Insets left="20.0"/>
+                </HBox.margin>
+            </Button>
+        </HBox>
+    </top>
+    <center>
+        <HBox prefHeight="300.0" prefWidth="223.0" BorderPane.alignment="CENTER">
+            <VBox prefHeight="200.0" prefWidth="130.0">
+                <HBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="0.0"/>
+                </HBox.margin>
+                <Button onAction="#handleBtns" prefHeight="75.0" prefWidth="52.0" text="8">
+                    <VBox.margin>
+                        <Insets bottom="30.0"/>
+                    </VBox.margin>
+                </Button>
+                <Button onAction="#handleBtns" prefHeight="75.0" prefWidth="52.0" text="1">
+                    <VBox.margin>
+                        <Insets bottom="30.0"/>
+                    </VBox.margin>
+                </Button>
+                <Button onAction="#handleBtns" prefHeight="75.0" prefWidth="52.0" text="7"/>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="130.0">
+                <HBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="0.0"/>
+                </HBox.margin>
+                <Button onAction="#handleBtns" prefHeight="75.0" prefWidth="52.0" text="2">
+                    <VBox.margin>
+                        <Insets bottom="30.0"/>
+                    </VBox.margin>
+                </Button>
+                <Button onAction="#handleBtns" prefHeight="75.0" prefWidth="52.0" text="9">
+                    <VBox.margin>
+                        <Insets bottom="30.0"/>
+                    </VBox.margin>
+                </Button>
+                <Button onAction="#handleBtns" prefHeight="75.0" prefWidth="52.0" text="5"/>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="130.0">
+                <HBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="0" top="0.0"/>
+                </HBox.margin>
+                <Button onAction="#handleBtns" prefHeight="75.0" prefWidth="52.0" text="4">
+                    <VBox.margin>
+                        <Insets bottom="30.0"/>
+                    </VBox.margin>
+                </Button>
+                <Button onAction="#handleBtns" prefHeight="75.0" prefWidth="52.0" text="6">
+                    <VBox.margin>
+                        <Insets bottom="30.0"/>
+                    </VBox.margin>
+                </Button>
+                <Button onAction="#handleBtns" prefHeight="75.0" prefWidth="52.0" text="3"/>
+            </VBox>
+            <BorderPane.margin>
+                <Insets bottom="0.0" left="10.0" right="10.0" top="10.0"/>
+            </BorderPane.margin>
+        </HBox>
+    </center>
+    <bottom>
+        <VBox prefHeight="105.0" prefWidth="385.0">
+            <Label fx:id="smallLabel" prefHeight="20.0" prefWidth="390.0" styleClass="labelSmall">
+            </Label>
+            <Label fx:id="bigLabel" prefHeight="80.0" prefWidth="390.0" text="0" styleClass="labelBig">
+            </Label>
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </BorderPane.margin>
+        </VBox>
+    </bottom>
+</BorderPane>

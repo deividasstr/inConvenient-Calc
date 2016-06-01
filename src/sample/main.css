@@ -1,0 +1,31 @@
+* {
+    -fx-font-family: 'Coming Soon';
+    -fx-wrap-text: true;
+    -fx-background-color: #00e600;
+}
+
+.button {
+  -fx-background-color: #ffff66;
+  -fx-background-radius: 10px;
+  -fx-border-radius: 10px;
+  -fx-border-width: 2px;
+  -fx-border-style: solid;
+  -fx-border-color: #fff;
+  -fx-font-size: 30px;
+  -fx-alignment: center;
+}
+
+.labelBig{
+-fx-font-size: 60px;
+-fx-border-width: 2px;
+-fx-border-style: solid;
+-fx-border-color: #000;
+-fx-background-color: #fff;
+ -fx-background-radius: 30px;
+ -fx-border-radius: 30px;
+}
+
+.labelSmall{
+-fx-font-size: 20px;
+-fx-text-fill: red;
+}

@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="inConvenientCalc">
+    <output-path>$PROJECT_DIR$/</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+        <option name="description" value="" />
+        <option name="htmlParamFile" value="" />
+        <option name="paramFile" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="D" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="inConvenientCalc.jar">
+        <element id="module-output" name="inConvenientCalc" />
+      </element>
+    </root>
+  </artifact>
+</component>
